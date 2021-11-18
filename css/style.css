@@ -1,34 +1,34 @@
-*{  
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
-  }
+}
 
-.container{ 
+.container {
     max-width: 1000px;
     margin: auto;
-   
+
 }
 
-header{
-    background-color: #48C5CE ;
-    text-align: center; 
+header {
+    background-color: #48C5CE;
+    text-align: center;
     color: whitesmoke;
-  
+
 }
 
-.title{
-    
+.title {
+
     font-size: 24px;
-    padding: 10px;  
-  
+    padding: 10px;
+
 }
 
-section{
-    padding: 20px;   /* distaciar a section da header e do canto direito */
+section {
+    padding: 20px;
     background-image: url('../images/people.jpg');
     background-size: cover;
     overflow: hidden;
@@ -36,79 +36,81 @@ section{
 }
 
 /* ---------- */
-.formContainer{
+.formContainer {
     max-width: 230px;
-    background-color: #FFFFFFBB; /* OBS O BB É O OPACITY */
-   
+    background-color: #FFFFFFBB;
+
     padding: 20px;
-    float:right;
+    float: right;
     color: black;
-   
+
 }
 
-h2{
-    font-size:16px;
+h2 {
+    font-size: 16px;
 }
 
-.mb{
+.mb {
     margin-bottom: 15px;
 }
 
-input, select{
-     width: 100%; 
-     box-sizing: border-box; 
+input,
+select {
+    width: 100%;
+    box-sizing: border-box;
     padding: 10px;
-    border:none; 
+    border: none;
     margin-bottom: 10px;
-   
-        
+
+
 }
 
-input[type="submit"]{
-    color:white;
+input[type="submit"] {
+    color: white;
     font-weight: bold;
     background-color: #48C5CE;
 }
 
-footer{
-    background-color:#48C5CE;
+footer {
+    background-color: #48C5CE;
     text-align: center;
-    /* fazendo isso vai centralizar a foto e o texto
-    pra tirar o center do  texto, mude no description */
+
     padding: 40px;
 }
 
-.picture{
-    width:160px; /* mude só o width pra manter a propoção */
-   
-   
-}
-.description{
-    /* pra fazer o texto ir pro lado direito da foto: display e max-width */
-    display:inline-block;
-    max-width: 40% ;
-    /* ------------------- */
-    /* margin da foto pro texto: */
-    margin-left:10px;
-    color:white;
-    text-align: justify; /* pra tirar o center do texto no footer */
-   margin-top: 10px;
-    
+.picture {
+    width: 160px;
+
+
 }
 
-/* agora damos a margem do titulo pro texto */
-.description p, .description h3{
+.description {
+
+    display: inline-block;
+    max-width: 40%;
+    /* ------------------- */
+    margin-left: 10px;
+    color: white;
+    text-align: justify;
+    margin-top: 10px;
+
+}
+
+
+.description p,
+.description h3 {
     margin-top: 10px;
     margin-bottom: 15px;
 }
-h3{
+
+h3 {
     text-align: center;
 }
 
 @media screen and (max-width: 550px) {
-	
-    .formContainer{
+
+    .formContainer {
         max-width: max-content;
 
-    }   
+    }
 }
